@@ -1,5 +1,14 @@
-// listen to keyboard input
+(function prependBase() {
+  document.querySelectorAll("audio").forEach((audio) => {
+    let src = audio.getAttribute("src");
+    if (src?.startsWith("/")) {
+      src = import.meta.env.BASE_URL + src.slice(1);
+      audio.setAttribute("src", src);
+    }
+  });
+})();
 
+// listen to keyboard input
 window.addEventListener("keydown", handleKeyDown);
 window.addEventListener("keyup", handleKeyUp);
 
