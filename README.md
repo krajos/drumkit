@@ -1,1 +1,3 @@
-This repo contains *Vanilla JS*(**TypeScript**) implementation of the the **Drum Kit** app.
+## Drum Kit
+
+This repo contains _Vanilla JS_(**TypeScript**) implementation of the the **Drum Kit** app.
