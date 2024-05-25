@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite --port 9000 --open",
-    "build": "tsc && vite build",
+    "build": "tsc && vite build --base=/drumkit/",
     "preview": "vite preview"
   },
   "devDependencies": {
